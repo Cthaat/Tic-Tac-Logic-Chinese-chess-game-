@@ -28,15 +28,16 @@ int main()
 				if (arr[ix][iy] == '#')
 				{
 					arr[ix][iy] = current;
+					if (current == 'X')
+					{
+						current = 'O';
+					}
+					else
+					{
+						current = 'X';
+					}
 				}
-				if (current == 'X')
-				{
-					current = 'O';
-				}
-				else
-				{
-					current = 'X';
-				}
+				
 			}
 		}
 		HWND hwn = GetHWnd();
