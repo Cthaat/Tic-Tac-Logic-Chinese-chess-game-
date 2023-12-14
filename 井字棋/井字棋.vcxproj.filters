@@ -14,4 +14,29 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="initialisation.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="check.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="draw.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="initialisation.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="check.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="draw.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
 </Project>
