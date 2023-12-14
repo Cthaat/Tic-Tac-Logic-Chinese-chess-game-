@@ -14,6 +14,14 @@ char checkwin(char arr[3][3])
 		{
 			return 'X';
 		}
+		if (arr[0][i] == 'O' && arr[1][i] == 'O' && arr[2][i] == 'O')
+		{
+			return 'O';
+		}
+		if (arr[0][i] == 'X' && arr[1][i] == 'X' && arr[2][i] == 'X')
+		{
+			return 'X';
+		}
 	}
 	if (arr[0][0] == 'X' && arr[1][1] == 'X' && arr[2][2] == 'X')
 	{
