@@ -38,6 +38,9 @@ int main()
 				}
 			}
 		}
+		HWND hwn = GetHWnd();
+		char ar[10] = { current };
+		SetWindowText(hwn, ar);
 		cleardevice();
 		drawboard();
 		drawpiece(arr);
