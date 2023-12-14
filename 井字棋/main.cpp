@@ -16,6 +16,7 @@ int main()
 	bool running = true;
 	while (running)
 	{
+		DWORD start = GetTickCount();
 		while (peekmessage(&msg))
 		{
 			if (msg.message == WM_LBUTTONDOWN)
@@ -60,6 +61,11 @@ int main()
 			running = false;
 		}
 		FlushBatchDraw();
+		DWORD over = GetTickCount();
+		if ((over - start) < 1000/60)
+		{
+			Sleep(1000 / 60 - (over - start));
+		}
 	}
 	EndBatchDraw();
 	return 0;
